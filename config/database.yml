@@ -12,7 +12,7 @@ default: &default
 development:
   <<: *default
   database: myrubyblog
-  username: postgresql
+  username: postgres
   password: natalie123
 
 # Warning: The database defined as "test" will be erased and
@@ -21,11 +21,11 @@ development:
 test:
   <<: *default
   database: myrubyblog
-  username: postgresql
+  username: postgres
   password: natalie123
 
 production:
   <<: *default
   database: myrubyblog
-  username: postgresql
-  password: natalie123database: db/production.sqlite3
+  username: postgres
+  password: natalie123
